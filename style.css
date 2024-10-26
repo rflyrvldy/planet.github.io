@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.back img{
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -90;
+}
+
+.back1 img{
+    top: 0;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+}
+
+.meteor img{
+    position: absolute;
+    z-index: 1;
+    height: 600px;
+    transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    bottom: 0;
+    margin-bottom: -50px;
+}
+
+nav{
+    backdrop-filter: blur(3px);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    max-width: 1200px;
+    margin-left: 180px;
+}
+
+nav img{
+    height: 50px;
+    cursor:default;
+}
+
+nav h3{
+    color: white;
+    cursor: default;
+    font-family: sans-serif;
+}
+
+
+.links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 180px;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: rgb(255, 255, 255);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+
+.menu-icon img{
+    height: 28px;
+    fill: white;
+}
+
+.menu-icon{
+    display: none;
+}
+
+
+
+
+header{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container{
+    margin-top: 3rem;
+} 
+
+.conten{
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+}
+
+.kanan{
+    z-index: 2;
+    color: white;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    font-family: sans-serif;
+}
+
+.kanan h1{
+    font-size: 110px;
+    color: orange;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.kanan h4{
+    margin-top: -10px;
+    font-size: 75px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.kanan button {
+    background: rgb(0,45,144);
+    background: -moz-linear-gradient(90deg, rgba(0,45,144,1) 0%, rgba(210,97,196,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,45,144,1) 0%, rgba(210,97,196,1) 100%);
+    background: linear-gradient(90deg, rgba(0,45,144,1) 0%, rgba(210,97,196,1) 100%);
+    padding: 15px 70px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.kanan button:hover{
+    background:rgba(210,97,196,1) ;
+    background: -moz-linear-gradient(90deg, rgba(210,97,196,1) 0%, rgb(0,45,144) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(210,97,196,1) 0%, rgb(0,45,144) 100%);
+    background: linear-gradient(90deg,rgba(210,97,196,1) 0%, rgb(0,45,144) 100%);
+    border: transparent;
+}
+
+.kiri img{
+    margin-top: 3rem;
+    height: 600px;
+    margin-left: 4rem;
+}
+
+
+
+.star{
+        background: rgb(73,19,94);
+        background: linear-gradient(0deg, rgba(73,19,94,1) 0%, rgba(1,6,65,1) 100%); 
+        height: 1000px;
+        width: 100%;
+        rotate: -180deg;
+        margin-top: 22px;
+        position: absolute;
+        z-index: -100;
+}
+
+
+.travel-container{
+    top: 5.5rem;
+    max-width: 1200px;
+    margin: auto;
+    height: 850px;
+        border-radius: 15px;
+        position: relative;
+        background-color: rgba(0, 21, 255, 0.071);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+}
+
+.travel-container h2{
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+    margin-left: 2rem;
+    font-size: 40px;
+}
+
+.yoii{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 3rem;
+    top: 3rem;
+}
+
+.travel-card1{
+    margin-top: 4rem;
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 0 15px 1px rgba(98, 135, 255, 0.559);
+    border: 2px solid rgba(98, 135, 255, 0.559);
+    background: rgb(73,19,94);
+    background: linear-gradient(0deg, rgba(73,19,94,1) 0%, rgba(1,6,65,1) 100%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 1rem 1rem 1rem;
+    padding-top: 7rem;
+}
+
+.travel-card1 h3{
+    color: white;
+    text-align: center;
+}
+
+.travel-card1 h4{
+    text-align: center;
+    color: orange;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+
+.travel-card1 p{
+    text-align: justify;
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.669);
+}
+
+.travel-card1 img{
+    height: 150px;
+    margin: 0 auto;
+    top: -4rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+img.card2{
+    height: 210px;
+    margin: 0 auto;
+    top: -6rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+
+
+.travel-container h2 span{
+    color: orange;
+}
+
+.travel-card h3,.travel-card h4,.travel-card p,.travel-card1 h3,.travel-card1 h4,.travel-card1 p{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.travel-card{
+    display: none;
+}
+
+.explore{
+    background: rgb(73,19,94);
+    background: linear-gradient(0deg, rgba(73,19,94,1) 0%, rgba(1,6,65,1) 100%); 
+    height: 100vh;
+    width: 100%;
+    margin-top: 124px;
+}
+
+
+.kiww img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.contenn{
+    align-items: center;
+    position: relative;
+    top: 5rem;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+
+.kirii img{
+    z-index: 9;
+    height:500px;
+    top: 3rem;
+    position: relative;
+}
+
+.kanann{
+    position: relative;
+    top: 1.9rem;
+}
+
+.kanann h1{
+    color: white;
+    font-size: 50px;
+}
+
+.kanann p{
+    color: white;
+    margin-top: 1rem;
+    max-width: 400px;
+}
+
+.wpr{
+    overflow: hidden;
+    width: 500px;
+}
+
+.net{
+    gap: 1rem;
+    display: flex;
+    width: 100%;
+}
+
+.jdl{
+    display: flex;
+    color: orange;
+}
+
+.jdl h1{
+    color: orange;
+}
+
+.jdl img{
+    margin-left: 3rem;
+    height: 70px;
+}
+
+
+.dis{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-size: 10px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.dis1{
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+    color: white;
+    font-size: 10px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+.disi{
+    display: flex;
+    gap:4rem;
+    color:orange;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.disi1{
+    display: flex;
+    gap:4.5rem;
+    color:orange;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.disi2{
+    display: flex;
+    gap: 1.5rem;
+    color:orange;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.disi3{
+    display: flex;
+    gap: 3.3rem;
+    color:orange;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+
+.nki{
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.nki a{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: orange;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.nki a:hover{
+    background-color: orange;
+    color: white;
+}
+
+.nki a:visited{
+    background-color: orange;
+    color: white;
+}
+
+.cc{
+    background: rgb(73,19,94);
+    background: linear-gradient(0deg, rgba(73,19,94,1) 0%, rgba(1,6,65,1) 100%); 
+    height: 850px;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    rotate: -180deg;
+}
+
+.cc img{
+    filter:drop-shadow(1px 1px 30px white);
+    border-radius: 100%;
+    position: relative;
+    left: 80rem;
+    top: 15rem;
+    height: 500px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    -webkit-filter:drop-shadow(1px 1px 30px white);
+}
+
+.hea{
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    top: 5rem;
+    position: relative;
+    font-size: 30px;
+}
+
+.hea span{
+    color: orange;
+}
+
+
+
+.kp{
+    padding-top: 10rem;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 2rem;
+}
+
+
+.car img{
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.car span{
+    color: orange;
+}
+
+.car p{
+    text-align: center;
+    max-width: 230px;
+    color: white;
+}
+
+
+.footer{
+    margin-top: 6rem;
+    height: 145px;
+    padding-bottom: 1.2rem;
+}
+.foot{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.in{
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.in:hover{
+    background-color:orange;
+}
+
+.in svg{
+    margin-top: 8px;
+}
+
+
+.idi ul{
+    margin-top:1.5rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.idi ul li a{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.idi p{
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.189);
+}
+
+h4,h1,p,h2,h5{
+    cursor: default;
+}
+
+
+
+
+@media only screen and (max-width:720px){
+    
+    .back img{
+        display: none;
+    }
+
+    .back1 img{
+        display:flex;
+    }
+
+    .meteor img{
+        margin-bottom: 20px;
+        height: 150px;
+        transform: translateX(-70px);
+        -webkit-transform: translateX(-70px);
+        -moz-transform: translateX(-70px);
+        -ms-transform: translateX(-70px);
+        -o-transform: translateX(-70px);
+}
+
+    nav{
+        margin: auto;
+        max-width: 720px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    nav div{
+        margin: 0;
+    }
+
+    nav img{
+        height: 30px;
+    }
+    
+    nav h3{
+        font-size: 15px;
+    }
+
+    nav ul.hidden{
+        display: flex;
+        transition: 1s ease;
+        -webkit-transition: 1s ease;
+        -moz-transition: 1s ease;
+        -ms-transition: 1s ease;
+        -o-transition: 1s ease;
+        backdrop-filter: blur(5px);
+}
+
+    .links{
+        transition: 1s ease;
+        -webkit-transition: 1s ease;
+        -moz-transition: 1s ease;
+        -ms-transition: 1s ease;
+        -o-transition: 1s ease;
+        backdrop-filter: blur(5px);
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 30px;
+}
+
+    .menu-icon{
+        display: flex;
+        margin-right: 15px;
+    }
+
+    .conten{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .kanan{
+        margin-top: 23rem;
+    }
+
+    .kanan h1{
+        font-size: 60px;
+    }
+    .kanan h4{
+        font-size: 40px;
+    }
+
+    .kanan button{
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+
+    .kiri img{
+        position: absolute;
+        height: 350px;
+        top: 2rem;
+        right: 20px;
+    }
+
+    .star{
+        margin-top: 90px;
+        height: 100vh;
+    }
+
+    .travel-container{
+        top: 8rem;
+        width: 340px;
+        height: 560px;
+        border-radius: 15px;
+        position: relative;
+        background-color: rgba(0, 21, 255, 0.071);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+}
+
+    .travel-container h2{
+        text-align: center;
+        font-family: 'Montserrat',sans-serif;
+        color: white;
+        position: relative;
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .artikel10{
+        display: none;
+    }
+
+    .artikel{
+        margin-top: 2rem;
+        padding-left:3rem;
+        padding-top: 5rem;
+        height: 400px;
+    }
+    
+    
+    .travel-card{
+        display: block;
+        margin-top: 0;
+        box-shadow: 0 0 15px 1px rgba(98, 135, 255, 0.559);
+        position: relative;
+        max-width: 250px;
+        height: 160px;
+        border-radius: 5px;
+        border: 2px solid rgba(98, 135, 255, 0.559);
+        text-align: center;
+        background: rgb(73,19,94);
+        background: linear-gradient(0deg, rgba(73,19,94,1) 0%, rgba(1,6,65,1) 100%);
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+        padding: 1rem 1rem 1rem;
+        padding-top: 10rem;
+}
+
+    .travel-card h3{
+        color: white;
+    }
+
+    .travel-card h4{
+        color: orange;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+
+
+    .travel-card p{
+        text-align: justify;
+        font-size: 15px;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.669);
+    }
+
+    .travel-card img{
+        height: 200px;
+        margin: 0 auto;
+        top: -4rem;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    img.card1{
+        height: 260px;
+        margin: 0 auto;
+        top: -6rem;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+
+    .explore{
+        height: 770px;
+        max-width: 720px;
+        margin: auto;
+        margin-top: 149px;
+    }
+
+    .kiww img{
+        max-width: 720px;
+        height: 720px;   
+    }
+
+    .contenn{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        max-width: 720px;
+        margin: auto;
+        top: 8rem;
+    }
+
+    .kirii img{
+        height: 250px;
+        top: 0;
+        padding-left: 4rem;
+    }
+
+    .wpr{
+        overflow: hidden;
+        width: 283px;
+        padding-top: 1rem;
+    }
+    
+    .net{
+        display: flex;
+        width: 100%;
+    }
+    
+    .kanann{
+        padding-left: 3rem;
+        top: 0;
+        max-width: 720px;
+    }
+
+    .kanann h1{
+        font-size: 30px;
+    }
+
+    .kanann img{
+        height: 40px;
+        margin-left: 1rem;
+    }
+
+    .kanann p{
+        font-size: 12px;
+    }
+
+    .dis{
+        margin-top: 2rem;
+        font-size: 9px;
+    }
+
+    .disi{
+        font-size: 12px;
+    }
+
+    .disi1{
+        font-size: 12px;
+    }
+
+    .disi2{
+        gap: 2.5rem;
+    }
+
+    .disi2,.disi3{
+        font-size: 12px;
+    }
+
+    .nki{
+        margin-top: 2rem;
+    }
+
+    .nki a{
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+
+    .cc{
+        height: 1330px;
+    }
+
+
+    .hea h2{
+        font-size: 30px;
+    }
+
+    .kp{
+        top: 0rem;
+        position: relative;
+        max-width: 720px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        left: 0;
+    }
+
+    .car{
+        margin: auto;
+        max-width: 720px;
+        margin-bottom: 3rem;
+    }
+
+    .car img{
+        height: 180px;
+        padding-left: 1rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .in{
+        width: 35px;
+        height: 35px;
+    }
+
+    .in svg{
+        height: 18px;
+    }
+
+    .footer{
+        margin-top: 2rem;
+    }
+
+    .idi ul{
+        gap: 1rem;
+    }
+
+    .idi ul li{
+        font-size: 12px;
+    }
+}
